@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KrishiSakha</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main-container">
+        <!-- LEFT SIDEBAR: Chats -->
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <button id="new-chat-btn">➕ New Chat</button>
+                <div class="theme-switcher">
+                    <span>☀️</span>
+                    <label class="switch">
+                        <input type="checkbox" id="theme-toggle">
+                        <span class="slider"></span>
+                    </label>
+                    <span>🌙</span>
+                </div>
+            </div>
+            <div class="chat-history" id="chat-history"></div>
+        </aside>
+
+        <!-- CENTER: Chat area -->
+        <main class="chat-wrapper">
+            <header class="mobile-header">
+                <button class="hamburger-btn" id="hamburger-btn">☰</button>
+                <h1 class="mobile-title">KrishiSakha</h1>
+                <!-- FAQ button for mobile -->
+                <button class="hamburger-btn" id="faq-btn-mobile">?</button>
+            </header>
+
+            <div class="chat-container" id="chat-container">
+                <div class="message-bubble bot-bubble">
+                    <p>Welcome to KrishiSakha! How can I help you today?</p>
+                </div>
+            </div>
+
+            <div class="input-container">
+                <div id="input-preview-container"></div>
+                <form class="input-main" onsubmit="event.preventDefault(); return false;">
+                    <button type="button" id="image-btn" class="icon-btn" title="Upload Image">🖼️</button>
+                    <input type="file" id="image-upload" accept="image/*" multiple hidden>
+                    <textarea id="user-input" placeholder="Ask a question..." rows="1"></textarea>
+                    <button type="button" id="voice-btn" class="icon-btn" title="Record Voice">🎤</button>
+                    <button type="button" id="send-btn" title="Send">➤</button>
+                </form>
+            </div>
+        </main>
+
+        <!-- RIGHT SIDEBAR: FAQs -->
+        <aside class="faq-sidebar" id="faq-sidebar">
+            <h3>FAQs</h3>
+            <div class="faq-list" id="faq-list">
+                <details class="faq-item">
+                    <summary class="faq-question">Why is soil testing important before planting?</summary>
+                    <p class="faq-answer">Soil testing is like a health check-up for your farm. It tells you which nutrients are in your soil and which are missing. This helps you use the right amount of the correct fertilizer, which saves money and improves the health and yield of your crops.</p>
+                </details>
+
+                <details class="faq-item">
+                    <summary class="faq-question">What is drip irrigation and how does it save water?</summary>
+                    <p class="faq-answer">Drip irrigation is a method where water is delivered slowly, drop-by-drop, directly to the base of each plant. It is highly efficient because very little water is lost to evaporation or runoff, saving up to 70% of water compared to flood irrigation.</p>
+                </details>
+
+                <details class="faq-item">
+                    <summary class="faq-question">What is the main difference between hybrid seeds and native (desi) seeds?</summary>
+                    <p class="faq-answer">Hybrid seeds are created to produce higher yields and often have better resistance to certain diseases, but you typically need to buy new seeds every year. Native (desi) seeds are naturally adapted to local conditions, are often more resistant to drought, and you can save them from your harvest to plant next year, though their yield may be lower.</p>
+                </details>
+                
+                <details class="faq-item">
+                    <summary class="faq-question">Why should I treat my seeds before sowing?</summary>
+                    <p class="faq-answer">Seed treatment involves coating seeds with a protective layer of fungicides or pesticides. This protects the seeds and young seedlings from soil-borne diseases and pests, leading to better germination and a healthier start for your crop.</p>
+                </details>
+
+                <details class="faq-item">
+                    <summary class="faq-question">What are the benefits of using organic manure (jaivik khad)?</summary>
+                    <p class="faq-answer">Organic manure not only provides essential nutrients but also improves the soil's physical condition. It helps the soil hold more water, improves aeration for the roots, and increases the population of beneficial microorganisms, leading to better long-term soil health.</p>
+                </details>
+                
+                <details class="faq-item">
+                    <summary class="faq-question">What is Integrated Pest Management (IPM)?</summary>
+                    <p class="faq-answer">IPM is a balanced approach to controlling pests that aims to reduce the use of chemical pesticides. It involves using pest-resistant crop varieties, encouraging natural predators like birds and insects, and using pesticides only when absolutely necessary. This method is often cheaper, better for the environment, and safer for your health.</p>
+                </details>
+                
+                <details class="faq-item">
+                    <summary class="faq-question">What is the PM-KISAN scheme?</summary>
+                    <p class="faq-answer">The Pradhan Mantri Kisan Samman Nidhi (PM-KISAN) is a government scheme that provides income support of ₹6,000 per year to eligible farmer families. The money is transferred directly to their bank accounts in three equal installments of ₹2,000.</p>
+                </details>
+
+                <details class="faq-item">
+                    <summary class="faq-question">How can a farmer get a Kisan Credit Card (KCC)?</summary>
+                    <p class="faq-answer">A Kisan Credit Card helps farmers get short-term loans for their agricultural needs at a lower interest rate. To get a KCC, you can apply at your nearest public sector bank, cooperative bank, or regional rural bank by submitting your land documents and KYC details (like Aadhaar and PAN card).</p>
+                </details>
+            </div>
+        </aside>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

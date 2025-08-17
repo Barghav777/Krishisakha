@@ -1,0 +1,33 @@
+flask
+flask-cors
+
+# Core ML
+torch
+torchvision
+torchaudio
+numpy==1.26.4
+
+# Transformers + text gen + ASR + translation
+transformers[sentencepiece]
+accelerate
+sentence-transformers
+
+# Vector search
+faiss-cpu
+
+# Vision / audio / OCR
+Pillow
+opencv-python-headless
+timm
+librosa
+soundfile
+pydub
+easyocr
+# pytesseract  # (not required now; EasyOCR + TrOCR are used)
+
+# Lang ID
+fasttext-wheel
+
+# Utils
+requests
+python-dotenv

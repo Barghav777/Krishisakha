@@ -1,0 +1,19 @@
+# .gitignore
+
+# Python
+__pycache__/
+*.pyc
+venv/
+.env
+
+# Uploaded files
+upload_*.webm
+upload_*.png
+upload_*.jpg
+temp_recording_*.webm
+temp_recording_*.wav
+
+# Model / Data files (if they are very large)
+# If your .pth or .index files are >100MB, consider using Git LFS
+# or downloading them in your Docker build process instead.
+# For now, we assume they are small enough to be in the repo.
