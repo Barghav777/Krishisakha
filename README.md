@@ -2,6 +2,9 @@
 
 KrishiSakha is conceptualized as a proactive, multilingual, and agentic artificial intelligence advisory system. Its design objective is to function as a sophisticated informational resource for agricultural practitioners in India, delivering timely, individualized, and empirically grounded guidance to augment agronomic practices. This initiative was conceived and executed in the context of the Capital One Launchpad Hackathon.
 
+## Demo Link
+[[https://huggingface.co/spaces/Barghav777/KrishiSakha]]
+
 ## Abstract of the Solution
 
 The KrishiSakha system is engineered to address a series of profound challenges endemic to the Indian agricultural sector, including but not limited to climatic volatility, significant crop attrition, and informational asymmetries exacerbated by linguistic and digital disparities. The application is designed to accept multimodal data inputs—encompassing vocalizations, textual entries, and pictorial representations across a spectrum of more than twenty indigenous Indian languages—and to subsequently furnish actionable intelligence. This is achieved through the synthesis of real-time data streams from public-sector sources, such as meteorological forecasts and soil health repositories, with a validated corpus of agricultural science, thereby facilitating the generation of dependable responses and preemptive notifications.
